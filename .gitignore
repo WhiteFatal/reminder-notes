@@ -1,0 +1,25 @@
+# Firebase
+.env
+.env.local
+.env.*.local
+firebase-config.js
+firebaseConfig.js
+serviceAccountKey.json
+.firebase/
+firebase-debug.log
+Firebase config.txt
+Setup Reminder App.txt
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Email
+reminderforreminder@gmail.com.txt
