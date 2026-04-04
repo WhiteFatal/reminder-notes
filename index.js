@@ -212,7 +212,7 @@ function setRandomBackground() {
 
 function setRandomReminderImage() {
     const index = getRandomInt(1, TOTAL_ASSETS)
-    reminderImageEl.src = `assets/list_icon/icon${index}.png`
+    reminderImageEl.src = `/assets/list_icon/icon${index}.png`
 }
 
 // function scheduleBackgroundChange() {
