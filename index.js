@@ -199,42 +199,13 @@ const TOTAL_ASSETS = 9
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min
 }
-
-function getRandomIntervalMs() {
-    // Random interval between 4 and 10 seconds
-    return getRandomInt(4000, 10000)
-}
-
 function setRandomBackground() {
     const index = getRandomInt(1, TOTAL_ASSETS)
     document.body.style.backgroundImage = `url("/assets/background/background${index}.png")`
 }
-
 function setRandomReminderImage() {
     const index = getRandomInt(1, TOTAL_ASSETS)
     reminderImageEl.src = `/assets/list_icon/icon${index}.png`
 }
-
-// function scheduleBackgroundChange() {
-//     const delay = getRandomIntervalMs()
-//     setTimeout(() => {
-//         setRandomBackground()
-//         scheduleBackgroundChange()
-//     }, delay)
-// }
-
-// function scheduleReminderImageChange() {
-//     const delay = getRandomIntervalMs()
-//     setTimeout(() => {
-//         setRandomReminderImage()
-//         scheduleReminderImageChange()
-//     }, delay)
-// }
-
-// Set initial random assets on load
 setRandomBackground()
 setRandomReminderImage()
-
-// Start the dynamic change loops
-// scheduleBackgroundChange()
-// scheduleReminderImageChange()
